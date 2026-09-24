@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover{
+    color: gray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.item1{
+    grid-column: span 2;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.item2{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+.item2 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.item2:hover{
+     box-shadow: rgba(75, 74, 74, 0.35) 0px 5px 15px;
+}
+.item2 h2{
+    color: white;
+    background-color: #333;
+    border-radius: 6px;
+}
+.item2 button{
+    background-color: #212529;
+    width: 40%;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+}
+.item2 button:hover{
+    background-color: #236ebe;
+}
+
+.item3{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 20px;
+}
+.item3 p{
+    text-align: left;
+}
+
+.item3 h2{
+    color: white;
+    background-color: #333;
+    border-radius: 6px;
+}
+
+.item3:hover{
+    box-shadow: rgba(75, 74, 74, 0.35) 0px 5px 15px;
+}
+
+.item4{
+    margin-top: 140px;
+    grid-column: span 2;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.item4 a{
+    text-decoration: none;
+    color: white;
+}
+.item4 a:hover{
+    color: #236ebe;
+}
+
+.item5{
+    margin-top: 20px;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.item5 img{
+    width: 35%;
+    object-fit: cover;
+    height: 360px;
+    border-radius: 10px;
+}
